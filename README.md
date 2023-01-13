@@ -13,5 +13,18 @@ Este acessório é perfeito para festas, shows, eventos noturnos e qualquer outr
 
 
 
+TAREFAS:
+[ ] IMPLEMENTAR WIFI MANAGER
+[ ] IMPLEMENTAR PAGINA WEB DE INTERAÇÃO COM O USUÁRIO
+[ ] IMPLEMENTAR LEDS
+
+
+
+IDEIAS FUTURAS
+[ ] CONEXÃO COM A TWITCH
+[ ] IMPLEMENTAR "SENSOR DE HUMOR"
+
+
+
 
 
