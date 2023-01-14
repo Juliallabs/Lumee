@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#include <WiFiManager.h>
+#include <ESP8266mDNS.h>
+#include "./infrastructure.h"
 
 void setup() {
-  // put your setup code here, to run once:
+    WiFi.mode(WIFI_STA);
+    Serial.begin(115200);
+    wmConfig(); // infrastructure.h
+    
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+   server.handleClient();
 }
