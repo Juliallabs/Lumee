@@ -1,20 +1,26 @@
-include <WiFiManager>
+#include <WiFiManager.h>
+ESP8266WebServer server(80); 
+
+void hendleIndex() {                           // send HTML to the page
+    Serial.println("GET /");
+    server.send(200, "text/html", "alooo");  // check HTML.h file
+}
 
 void wmConfig() {
     // WiFiManager, Local intialization. Once its business is done, there is no
     // need to keep it around
     WiFiManager wm;
-    // wm.resetSettings(); // reset the wifi config
+     wm.resetSettings(); // reset the wifi config
 
     bool res;
-    res = wm.autoConnect("StarON");  // password protected ap
+    res = wm.autoConnect("Lumee");  // password protected ap
 
-    if (!res) {
-        // Serial.println("Failed to connect");
-        //  ESP.restart();
-    } else {
-        // if you get here you have connected to the WiFi
-        // Serial.println("connected...yeey :)");
+    if (!MDNS.begin("Lumee")) {  // Start the mDNS responder for esp8266.local
+        Serial.println("Error setting up MDNS responder!");
     }
-    // Serial.println(WiFi.localIP());
+    MDNS.addService("http", "tcp", 80);
+    WiFi.hostname("Lumee");
+
+    server.on("/", hendleIndex);
+    server.begin();
 }
