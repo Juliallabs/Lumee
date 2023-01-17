@@ -1,9 +1,22 @@
 #include <WiFiManager.h>
-ESP8266WebServer server(80); 
+#include "./HTML.h"
+#include "./JS.h"
+#include "./STYLE.h"
+ESP8266WebServer server(80);
+
 
 void hendleIndex() {                           // send HTML to the page
     Serial.println("GET /");
-    server.send(200, "text/html", "alooo");  // check HTML.h file
+    server.send(200, "text/html", postForms);  // check HTML.h file
+}
+void handleStyle() {                           // send HTML to the page
+    Serial.println("GET /style.css");
+    server.send(200, "text/css", style);  // check HTML.h file
+}
+
+void handlejs() {                           // send HTML to the page
+    Serial.println("GET /js");
+    server.send(200, "application/javascript", js);  // check HTML.h file
 }
 
 void wmConfig() {
@@ -22,5 +35,7 @@ void wmConfig() {
     WiFi.hostname("Lumee");
 
     server.on("/", hendleIndex);
+    server.on("/style.css", handleStyle);
+    server.on("/js", handlejs);
     server.begin();
 }

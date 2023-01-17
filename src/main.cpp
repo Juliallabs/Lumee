@@ -3,6 +3,7 @@
 #include <ESP8266mDNS.h>
 #include "./infrastructure.h"
 
+
 void setup() {
     WiFi.mode(WIFI_STA);
     Serial.begin(115200);
