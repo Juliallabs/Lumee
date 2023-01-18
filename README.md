@@ -1,5 +1,5 @@
 # Lumee
-## TECH IS BEAUTY
+## LUMEE IS TECH AND TECH IS BEAUTY
 
 Este é um acessório de cabelo divertido e inovador que adiciona um toque de cor e brilho à sua aparência. Com uma variedade de cores e efeitos de iluminação, você pode personalizar o seu visual de acordo com seu estilo e humor.
 
