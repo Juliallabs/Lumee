@@ -25,27 +25,7 @@ var hexInput = document.getElementById("hexInput");
 colorPicker.on(["color:init", "color:change"], function(color){
   // Show the current color in different formats
   // Using the selected color: https://iro.js.org/guide.html#selected-color-api
-  values.innerHTML = [
-    "hex: " + color.hexString,
-    "rgb: " + color.rgbString,
-    "hsl: " + color.hslString,
-  ].join("<br>");
-  
-  hexInput.value = color.hexString;
-
+  fazRequisicao(`/cor?cor=${color.rgbString}`);
 });
-
-hexInput.addEventListener('change', function() {
-  colorPicker.color.hexString = this.value;
-  let corHexa = color.hexString.substring(1);// tira o #
-  //manipulação das cores
-  let r = parseInt(corHexa.substring(0,2),16);
-  let g = parseInt(corHexa.substring(2,4),16);
-  let b = parseInt(corHexa.substring(4,6),16);
-  
-  fazRequisicao(`/cor?cor=(${r}, ${g}, ${b})`);
-});
-
-
 
 )===";

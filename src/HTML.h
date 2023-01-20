@@ -8,6 +8,8 @@ const char postForms[] PROGMEM = R"===(
     </title>
   </head>
   <body>
+    <div id= "values"></div>
+    <div id= "hexInput"></div>
     <center><div class="quadrado"> 
     <center><h1 class = "titulo">Lumee</centerr>  
     <div class="wrap">

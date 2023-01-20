@@ -30,13 +30,19 @@ void handlejs() {                           // send HTML to the page
 void handleGetParam() {
  if (server.hasArg("cor")) {
     String corRGB = server.arg("cor");
-    String r = corRGB.substring(1,corRGB.indexOf(','));
+    String r = corRGB.substring(4,corRGB.indexOf(','));
     corRGB = corRGB.substring(corRGB.indexOf(',')+1);
     String g = corRGB.substring(0,corRGB.indexOf(','));
     corRGB = corRGB.substring(corRGB.indexOf(',')+1);
     String b = corRGB.substring(0,corRGB.length()-1);
-    pixels.fill(0,pixels.Color(r.toInt(),g.toInt(),b.toInt()));
-    Serial.println(corRGB);
+    pixels.setPixelColor(0,pixels.Color(r.toInt(),g.toInt(),b.toInt()));
+    pixels.show();
+    Serial.print("r: ");
+    Serial.println(r.toInt());
+    Serial.print("g: ");
+    Serial.println(g.toInt());    
+    Serial.print("b: ");
+    Serial.println(b.toInt());
  }
 
 }   
@@ -56,8 +62,10 @@ void setup() {
     //init leds
     pixels.begin();
     pixels.clear();
-    pixels.fill(0,pixels.Color(0,255,0));
+    pixels.setPixelColor(0,pixels.Color(0,255,0));
+    //pixels.fill(0,pixels.Color(0,255,0));
     pixels.show();
+    delay(30);
     
 
 }
