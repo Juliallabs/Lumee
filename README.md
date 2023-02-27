@@ -1,7 +1,7 @@
 # Lumee
 ## LUMEE IS TECH AND TECH IS BEAUTY
 
-Este é um acessório de cabelo divertido e inovador que adiciona um toque de cor e brilho à sua aparência. Com uma variedade de cores e efeitos de iluminação, você pode personalizar o seu visual de acordo com seu estilo e humor.
+Este é um acessório divertido e inovador que adiciona um toque de cor e brilho à sua aparência. Com uma variedade de cores e efeitos de iluminação, você pode personalizar o seu visual de acordo com seu estilo e humor.
 
 Características:
 
@@ -15,13 +15,23 @@ Este acessório é perfeito para festas, shows, eventos noturnos e qualquer outr
 
 ## TAREFAS:
 - [X] IMPLEMENTAR WIFI MANAGER
-- [ ] IMPLEMENTAR PAGINA WEB DE INTERAÇÃO COM O USUÁRIO
-- [ ] IMPLEMENTAR LEDS
+- [X] IMPLEMENTAR PAGINA WEB DE INTERAÇÃO COM O USUÁRIO
+- [X] IMPLEMENTAR LEDS
+- [X] DESENVOLVER O CASE
+
+## MELHORIAS
+- [ ] TROCAR FIOS PARA FIOS TRANSPARENTES
+- [ ] MELHORAR A FORMA DE ENCAIXE DO LED NA ORELHA
+- [ ] CABLE MANAGEMENT
+- [ ] FAZER VERSAO MELHORADA DO CASE
+- [ ] MELHORAR VISUALIZAÇAO EM DISPOSITIVOS MOVEIS
+- [ ] VERIFICAR OS LIMITES DO MDNS
 
 
-
-## IDEIAS FUTURAS:
+## FEATURES POSSIVEIS:
 - [ ] CONEXÃO COM A TWITCH
+- [ ] SALVAR ULTIMA COR SELECIONADA
+- [ ] CRIAR DIFERENTES EFEITOS
 - [ ] IMPLEMENTAR "SENSOR DE HUMOR"
 
 

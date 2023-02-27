@@ -1,66 +1,42 @@
 char style[] PROGMEM = R"===(
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 body {
   color: #000;
-  background: #343434;
+  background:  #e0e0e0;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+  font-family: Sacramento;
 }
 .titulo{
-  font-family: bungee;
+  font-size: 72px;
+  color: #5d5d5d;
   line-height: 20px;
-  text-shadow: 2px 2px 5px #343434;
+  text-shadow: 2px 2px 5px #34343434;
 }
 .quadrado{
-  padding-top: 20px;
-  padding-bottom: 1vh;
-  background: #fff;
-  border-radius: 25px;
-  width: 30rem;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.wrapper svg {
-}
-
-.wrap {
-  min-height: 100vh;
-  max-width: 720px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow:  40px 40px 75px #acacac,
+             -40px -40px 75px #ffffff;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  
-  .half {
-    width: 50%;
-    padding: 32px 0;
-  }
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  gap: 6px;
+  border-radius: 32px;
+ 
 }
-
-.title {
-  font-family: sans-serif;
-  line-height: 24px;
+p{
+  font-size: 24px;
+}
+.colorPicker{
   display: block;
-  padding: 8px 0;
+  width: 100%;
 }
-
-.readout {
-  margin-top: 32px;
-  line-height: 180%;
-}
-
-#values {
- font-family: monospace;
-  line-height: 150%;
-}
-
-.link {
-  margin-top: 16px;
-  
-  a {
-    color: MediumSlateBlue;
-  }
-}
-
 )===";
