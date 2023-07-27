@@ -2,6 +2,7 @@
 
 <div align="center">
 <img src="imagens/projeto.png" width="400px">
+  
 <strong>LUMEE IS TECH AND TECH IS BEAUTY</strong> 
 </div>
 
@@ -28,10 +29,10 @@ Depois disso, basta acessar o link http://lumee.local de qualquer dispositivo pa
 
 Este projeto foi desenvolvido em parceria com:
 
-<a href="https://www.altium.com/"><img src="./imagens/altium.png"/></a>
-<a href="https://www.pcbway.com/"><img src="./imagens/pcbway.png"/></a>
-<a href="https://www.makerhero.com/"><img src="./imagens/makerhero.png"/></a>
-<a href="https://proesi.com.br/"><img src="./imagens/proesi.png"/></a>
+<a href="https://www.altium.com/"><img src="./imagens/altium.png" width="200px"/></a>
+<a href="https://www.pcbway.com/"><img src="./imagens/pcbway.png" width="200px"/></a>
+<a href="https://www.makerhero.com/"><img src="./imagens/makerhero.png" width="200px"/></a>
+<a href="https://proesi.com.br/"><img src="./imagens/proesi.png" width="200px"/></a>
 
 ## 📹 Vídeos relacionados
 
