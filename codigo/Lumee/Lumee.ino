@@ -8,7 +8,7 @@
 #include"./style.h"
 
 // LED config
-#define PIN 4
+#define PIN 2
 #define NUMPIXELS 4
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
