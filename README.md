@@ -12,13 +12,15 @@ O projeto permite que você acesse uma página web, através do seu computador o
 
 O projeto foi desenvolvido com a placa Wemos (ESP8266) como microcontrolador e conta também com uma bateria que pode ser recarregada através de um cabo USB permitindo uma maior flexibilidade de uso.
 
-O código foi desenvolvido com C/C++ usando a extensão PlatformIO do Visual Studio Code.
+O código foi desenvolvido com C/C++ usando a extensão [PlatformIO](https://platformio.org/) do Visual Studio Code.
 
 ## 🤖 Como usar este projeto
 
-Para utilizar este projeto, você precisa fazer o upload do arquivo [main.cpp](./src/main.cpp) para a placa microcontrolada e montar o circuito como mostrado na imagem abaixo:
+Para utilizar este projeto, você precisa fazer o upload do arquivo [main.cpp](./src/main.cpp) para a placa microcontrolada e montar o circuito como mostrado no esquemático abaixo:
 
-Depois disso, basta acessar o link http://lumee.local de qualquer dispositivo para controlar as cores dos LEDs usados.
+<img src="./imagens/esquematico.png">
+
+Depois disso, basta acessar o link `http://lumee.local` de qualquer dispositivo para controlar as cores dos LEDs usados.
 
 ## 📚 Bibliotecas usadas
 
