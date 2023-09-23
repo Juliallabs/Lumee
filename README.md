@@ -23,20 +23,11 @@ Depois disso, basta acessar o link http://lumee.local de qualquer dispositivo pa
 ## 📚 Bibliotecas usadas
 
 -   [WiFiManager](https://github.com/tzapu/WiFiManager)
-- [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
+-   [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 
 ## 🤝 Parcerias
 
 Este projeto foi desenvolvido em parceria com:
 
-<a href="https://www.altium.com/"><img src="./imagens/altium.png" width="200px"/></a>
 <a href="https://www.pcbway.com/"><img src="./imagens/pcbway.png" width="200px"/></a>
-<a href="https://www.makerhero.com/"><img src="./imagens/makerhero.png" width="200px"/></a>
-<a href="https://proesi.com.br/"><img src="./imagens/proesi.png" width="200px"/></a>
-
-## 📹 Vídeos relacionados
-
-Veja alguns vídeos que produzi relacionados a este projeto: 
-- [Video1]() 
-- [Video2]() 
-- [Video3]()
+<a href="https://br.mouser.com/"><img src="./imagens/mouser.png" width="200px"/></a>
