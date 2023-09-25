@@ -8,8 +8,13 @@
 #include"./style.h"
 
 // LED config
+<<<<<<< Updated upstream:src/main.cpp
 #define PIN 4
 #define NUMPIXELS 4
+=======
+#define PIN 2
+#define NUMPIXELS 9
+>>>>>>> Stashed changes:codigo/Lumee/Lumee.ino
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 ESP8266WebServer server(80);
@@ -35,7 +40,7 @@ void handleGetParam() {
     String g = corRGB.substring(0,corRGB.indexOf(','));
     corRGB = corRGB.substring(corRGB.indexOf(',')+1);
     String b = corRGB.substring(0,corRGB.length()-1);
-    pixels.setPixelColor(0,pixels.Color(r.toInt(),g.toInt(),b.toInt()));
+    pixels.fill(pixels.Color(r.toInt(),g.toInt(),b.toInt()));
     pixels.show();
     Serial.print("r: ");
     Serial.println(r.toInt());
